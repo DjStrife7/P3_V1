@@ -14,20 +14,35 @@
   </head>
 
   <body>
-    <header>
-      <i class="fa-sharp fas fa-arrow-left"></i>
+    <header class="header">
       <img src="public/assets/logo/ohmyfood.png" class="header__logo" alt="Logo de la société Ohmyfood"></img>
+      <nav class="header__nav">
+        <ul class="header__nav__menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li class="menu__deroulant"><a href="#">Les Menus &nbsp; &#x25BC;</a>
+            <ul class="menu__list">
+              <li class="menu__resto"><a href="menu_1.html">La palette du goût</a></li>
+              <li class="menu__resto"><a href="menu_2.html">La note enchantée</a></li>
+              <li class="menu__resto"><a href="menu_3.html">À la française</a></li>
+              <li class="menu__resto"><a href="menu_4.html">Le délice des sens</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Une proposition &#x3F;</a></li>
+          <li><a href="#">Nous rejoindre</a></li>
+          <li><a href="mailto:email@exemple.com?subject=Demande d'informations">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section class="search">
       <div class="search__bloc">
-        <i class="fas fa-map-marker-alt"></i>
-        <input type="text" name="text" class="search__zone" placeholder="Paris, Belleville">
+        <i class="fas fa-location-dot search__bloc__marker"></i>
+        <input type="text" name="recherche" class="search__bloc__zone" placeholder="">
       </div>
-      <div class="explore__bloc">
-        <h1 class="explore__title">Réservez le menu qui vous convient</h1>
-        <p class="explore__descrip">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-        <button class="explore__button">Explorez nos restaurants</button>
+      <div class="search__explo">
+        <h1 class="search__explo__title">Réservez le menu qui vous convient</h1>
+        <p class="search__explo__descrip">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+        <button class="search__explo__button">Explorez nos restaurants</button>
       </div>
     </section>
 

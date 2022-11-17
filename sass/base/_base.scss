@@ -38,6 +38,8 @@ pre {
 }
 
 a {
+  color: #000;
+  text-decoration: none;
   background-color: transparent;
 }
 
@@ -88,6 +90,7 @@ input,
 optgroup,
 select,
 textarea {
+  text-decoration: none;
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -128,6 +131,10 @@ button:-moz-focusring,
 
 fieldset {
   padding: 0.35em 0.75em 0.625em;
+}
+
+li {
+  list-style-type: none;
 }
 
 legend {
