@@ -36,12 +36,13 @@
 
     <section class="search">
       <div class="search__bloc">
-        <i class="fas fa-location-dot search__bloc__marker"></i>
-        <input type="text" name="recherche" class="search__bloc__zone" placeholder="">
+        <input type="text" name="recherche" class="search__bloc__zone fontawesome" placeholder="&#xf3c5; &nbsp; Paris, Belleville">
       </div>
       <div class="search__explo">
-        <h1 class="search__explo__title">Réservez le menu qui vous convient</h1>
-        <p class="search__explo__descrip">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+        <div class="search__explo__text">
+          <h1 class="search__explo__title">Réservez le menu qui vous convient.</h1>
+          <p class="search__explo__descrip">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+        </div>
         <button class="search__explo__button">Explorez nos restaurants</button>
       </div>
     </section>
@@ -51,27 +52,33 @@
         <div class="article__block">
           <h1>Fonctionnement</h1>
           <div class="article__select">
-            <button class="article__choose">
-              <span>
-                <span class="article__number">1</span>
-                <i class="fas fa-mobile-screen-button"></i>
-                Choisissez un restaurant
-              </span>
-            </button>
-            <button class="article__compose">
-              <span>
-                <span class="article__number">2</span>
-                <i class="fas fa-list-ul"></i>
-                Composez votre menu
-              </span>
-            </button>
-            <button class="article__taste">
-              <span>
-                <span class="article__number">3</span>
-                <i class="fas fa-store"></i>
-                Degustez au restaurant
-              </span>
-            </button>
+            <div class="article__select__zone">
+              <span class="article__select__number">1</span>
+              <button class="article__select__button">
+                <span>
+                  <i class="fas fa-mobile-screen-button"></i>
+                  <span>Choisissez un restaurant</span>
+                </span>
+              </button>
+            </div>
+            <div class="article__select__zone">
+              <span class="article__select__number">2</span>
+              <button class="article__select__button">
+                <span>
+                  <i class="fas fa-list-ul"></i>
+                  <span>Composez votre menu</span>
+                </span>
+              </button>
+            </div>
+            <div class="article__select__zone">
+              <span class="article__select__number">3</span>
+              <button class="article__select__button">
+                <span>
+                  <i class="fas fa-store"></i>
+                  <span>Degustez au restaurant</span>
+                </span>
+              </button>
+            </div>
           </div>  
         </div>
       </article>
