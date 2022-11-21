@@ -1,5 +1,75 @@
+footer {
+  background-color: $colour-darkgrey;
+  color: $colour-white;
+  padding: 15px;
+  @media (min-width: 768px) and (max-width: 991px) {
+    padding: 40px;
+  }
+  @media (min-width: 992px) {
+    padding: 60px;
+  }
+}
+
 .footer__block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  @media (min-width: 768px) and (max-width: 991px) {
+    margin-bottom: 25px;
+  }
+  @media (min-width: 992px) {
+    @include flex-center;
+    margin-bottom: 40px;
+  }
   & > img {
-    width: 200px;
+    width: 80px;
+    @media (min-width: 768px) and (max-width: 991px) {
+      width: 200px;
+    }
+    @media (min-width: 992px) {
+      width: 350px;
+    }
+  }
+}
+
+.footer__links {
+  width: 45%;
+  @media (min-width: 992px) {
+    width: 100%;
+  }
+  & > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60px;
+    @media (min-width: 768px) and (max-width: 991px) {
+      height: 120px;
+    }
+    @media (min-width: 992px) {
+      height: 160px;
+      align-items: center;
+    }
+    & > li {
+      & > i {
+        width: 18px;
+        @media (min-width: 768px) and (max-width: 991px) {
+          width: 40px;
+          font-size: 20px;
+        }
+        @media (min-width: 992px) {
+          width: 60px;
+          font-size: 30px;
+        }
+      }
+      & > a {
+        color: $colour-white;
+        @media (min-width: 768px) and (max-width: 991px) {
+          font-size: 20px;
+        }
+        @media (min-width: 992px) {
+          font-size: 25px;
+        }
+      }
+    }
   }
 }
