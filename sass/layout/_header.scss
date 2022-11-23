@@ -42,7 +42,7 @@
         @include flex-center;
         width: 20%;
         position: relative;
-        font-size: 15px;
+        font-size: 17px;
         font-weight: 500;
         border-bottom: 2px solid $colour-primary;
         &:hover {
@@ -91,9 +91,9 @@
     background-color: $colour-white;
     }
   &__resto {
-    border-bottom: 1px solid $colour-primary;
+    border-bottom: 2px solid $colour-primary;
     &:hover {
-      border-bottom: 1px solid $colour-secondary;
+      border-bottom: 2px solid $colour-secondary;
       cursor: pointer;
     }
     & a {

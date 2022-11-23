@@ -62,7 +62,7 @@
     flex-direction: column;
     width: 100%;
     background-color: #f6f6f6;
-    padding: 15px 0 10px 0;
+    padding: 15px 0 15px 0;
     @media (min-width: 992px) {
       justify-content: space-between;
       flex-direction: row;
@@ -75,6 +75,7 @@
       flex-direction: column;
       @media (min-width: 992px) {
         width: 60%;
+        max-width: 570px;
         margin-bottom: 20px;
       }
     }
@@ -169,7 +170,8 @@
       width: 100%;
       max-height: 600px;
     }
-    & > h1 {
+    & > h2 {
+      font-size: 18px;
       margin-top: 0;
       @media (min-width: 768px) and (max-width: 991px) {
         font-size: 35px;
@@ -349,7 +351,9 @@
     @media (min-width: 992px) {
       width: 90%;
     }
-    & > h1 {
+    & > h2 {
+      font-size: 18px;
+      margin-bottom: 20px;
       @media (min-width: 768px) and (max-width: 991px) {
         font-size: 35px;
       }
@@ -362,7 +366,7 @@
       flex-direction: column;
       justify-content: space-between;
       width: 100%;
-      height: 850px;
+      height: 900px;
       @media (min-width: 768px) and (max-width: 991px) {
         height: 1650px;
       }
@@ -373,162 +377,3 @@
     }
   }
 }
-
-.menu__choice {
-  border: none;
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
-  box-shadow: 4px 4px 15px #35353553;
-  @media (min-width: 768px) and (max-width: 991px) {
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-}
-  @media (min-width: 992px) {
-    width: 48%;
-    height: 46%;
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-}
-  &__img {
-    @include flex-center;
-    width: 100%;
-    height: 140px;
-    overflow: hidden;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    @media (min-width: 768px) and (max-width: 991px) {
-      height: 280px;
-      border-top-left-radius: 25px;
-      border-top-right-radius: 25px;
-    }
-    @media (min-width: 992px) {
-      height: 320px;
-      border-top-left-radius: 25px;
-      border-top-right-radius: 25px;
-    }
-    & > img {
-      width: 100%;
-      position: relative;
-        top: -20px;
-      @media (min-width: 992px) {
-        height: 340px;
-      }
-    }
-    & > p {
-      position: absolute;
-      right: 10%;
-      z-index: 100;
-      font-size: 13px;
-      font-weight: 600;
-      color: #3b8875;
-      padding: 7px 10px;
-      background-color: $colour-tertiary;
-      @media (min-width: 768px) and (max-width: 991px) {
-        font-size: 25px;
-      }
-      @media (min-width: 992px) {
-        font-size: 22px;
-      }
-    }
-    & > .new_1 {
-      top: 760px;
-      @media (min-width: 768px) and (max-width: 991px) {
-        top: 1390px;
-      }
-      @media (min-width: 992px) {
-        right: 55%;
-        top: 1430px;
-      }
-    }
-    & > .new_2 {
-      top: 980px;
-      @media (min-width: 768px) and (max-width: 991px) {
-        top: 1810px;
-      }
-      @media (min-width: 992px) {
-        right: 8%;
-        top: 1430px;
-      }
-    }
-    & > .new_3 {
-      top: 1200px;
-      @media (min-width: 768px) and (max-width: 991px) {
-        top: 2230px;
-      }
-      @media (min-width: 992px) {
-        right: 55%;
-        top: 1860px;
-      }
-    }
-    & > .new_4 {
-      top: 1420px;
-      @media (min-width: 768px) and (max-width: 991px) {
-        top: 2650px;
-      }
-      @media (min-width: 992px) {
-        right: 8%;
-        top: 1860px;
-      }
-    }
-  }
-  &__resume {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 25px 10px 10px;
-    @media (min-width: 768px) and (max-width: 991px) {
-      margin: 20px 50px 20px 20px;
-    }
-    @media (min-width: 992px) {
-      margin: 10px 40px 15px 20px;
-    }
-    & i {
-      @include flex-center;
-      font-size: 20px;
-      @media (min-width: 768px) and (max-width: 991px) {
-        font-size: 40px;
-      }
-      @media (min-width: 992px) {
-        font-size: 35px;
-      }
-      &:hover {
-        cursor: pointer;
-      }
-      &:active {
-        color: $colour-primary;
-        font-family: "Fontawesome";
-      }
-    }
-  }
-  &__text {
-    & h1 {
-      font-size: 15px;
-      font-weight: 700;
-      margin: 0;
-      @media (min-width: 768px) and (max-width: 991px) {
-        font-size: 30px;
-      }
-      @media (min-width: 992px) {
-        font-size: 20px;
-      }
-    }
-    & p {
-      font-size: 14px;
-      font-weight: 300;
-      @media (min-width: 768px) and (max-width: 991px) {
-        font-size: 28px;
-      }
-      @media (min-width: 992px) {
-        font-size: 18px;
-      }
-    }
-  }
-}  

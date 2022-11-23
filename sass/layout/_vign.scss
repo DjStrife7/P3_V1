@@ -1,0 +1,182 @@
+.menu__vign {
+  height: 210px;
+  border: none;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  box-shadow: 4px 4px 15px #35353553;
+  @media (min-width: 768px) and (max-width: 991px) {
+    height: 380px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+  }
+  @media (min-width: 992px) {
+    width: 48%;
+    height: 46%;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+  }
+  & > i {
+    @include flex-center;
+    width: 30px;
+    font-size: 20px;
+    z-index: 500;
+    position: relative;
+      top: -40px;
+      left: 82%;  
+    @media (min-width: 768px) and (max-width: 991px) {
+        top: -80px;
+        left: 88%;
+      font-size: 40px;
+    }
+    @media (min-width: 992px) {
+        top: -65px;
+      font-size: 35px;
+    }
+    &:hover {
+      cursor: pointer;
+      color: $colour-primary;
+      font-family: "Fontawesome";
+    }
+    &:active {
+      color: $colour-primary;
+      font-family: "Fontawesome";
+    }
+  }
+}
+
+
+.menu__choice {
+  &:hover {
+    cursor: pointer;
+  }
+  &__img {
+    @include flex-center;
+    width: 100%;
+    max-height: 150px;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    @media (min-width: 768px) and (max-width: 991px) {
+      height: 280px;
+      max-height: none;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+    }
+    @media (min-width: 992px) {
+      height: 320px;
+      max-height: none;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+    }
+    & > img {
+      width: 100%;
+      position: relative;
+        top: -10px;
+      @media (min-width: 992px) {
+        height: auto;
+        min-height: 320px;
+          top: 0;
+      }
+    }
+    & > p {
+      position: absolute;
+      right: 10%;
+      z-index: 100;
+      font-size: 13px;
+      font-weight: 600;
+      color: #3b8875;
+      padding: 7px 10px;
+      background-color: $colour-tertiary;
+      @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 25px;
+      }
+      @media (min-width: 992px) {
+        font-size: 22px;
+      }
+    }
+    & > .new_1 {
+      top: 710px;
+      @media (min-width: 768px) and (max-width: 991px) {
+        top: 1295px;
+      }
+      @media (min-width: 992px) {
+        right: 54%;
+        top: 1365px;
+      }
+    }
+    & > .new_2 {
+      top: 940px;
+      @media (min-width: 768px) and (max-width: 991px) {
+        top: 1715px;
+      }
+      @media (min-width: 992px) {
+        right: 7.5%;
+        top: 1365px;
+      }
+    }
+    & > .new_3 {
+      top: 1170px;
+      @media (min-width: 768px) and (max-width: 991px) {
+        top: 2140px;
+      }
+      @media (min-width: 992px) {
+        right: 54%;
+        top: 1815px;
+      }
+    }
+    & > .new_4 {
+      top: 1400px;
+      @media (min-width: 768px) and (max-width: 991px) {
+        top: 2560px;
+      }
+      @media (min-width: 992px) {
+        right: 7.5%;
+        top: 1815px;
+      }
+    }
+  }
+  &__text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 28%;
+    margin-left: 15px;
+    @media (min-width: 768px) and (max-width: 991px) {
+      margin-left: 30px;
+    }
+    @media (min-width: 992px) {
+      height: 23%;
+      margin-left: 20px;
+    }
+    & h3 {
+      font-size: 15px;
+      font-weight: 700;
+      margin: 0;
+      @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 30px;
+      }
+      @media (min-width: 992px) {
+        font-size: 20px;
+      }
+    }
+    & p {
+      font-size: 14px;
+      font-weight: 300;
+      @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 28px;
+      }
+      @media (min-width: 992px) {
+        font-size: 18px;
+      }
+    }
+  }
+}  
