@@ -102,6 +102,7 @@
     }
     &__button {
       @include flex_full_center;
+      width: 100%;
       & > button {
         @include gradient_button;
       }

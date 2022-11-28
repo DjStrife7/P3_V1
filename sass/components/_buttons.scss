@@ -19,6 +19,9 @@
     -moz-transform: scale(1.15);
     -ms-transform: scale(1.15);
     -o-transform: scale(1.15);
-    background: none;
+    background: linear-gradient(175deg,
+      lighten($color: $colour-secondary, $amount: 5),
+      lighten($color: $colour-primary, $amount: 5),
+    )
   }
 }
