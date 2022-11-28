@@ -1,3 +1,4 @@
+// Vignettes Index
 .menu__vign {
   height: 210px;
   border: none;
@@ -7,6 +8,9 @@
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
   box-shadow: 4px 4px 15px #35353553;
+  &:hover {
+    cursor: pointer;
+  }
   @media (min-width: 768px) and (max-width: 991px) {
     height: 380px;
     border-radius: 25px;
@@ -25,7 +29,7 @@
     -o-border-radius: 25px;
   }
   & > i {
-    @include flex-center;
+    @include flex_full_center;
     width: 30px;
     font-size: 20px;
     z-index: 500;
@@ -59,7 +63,7 @@
     cursor: pointer;
   }
   &__img {
-    @include flex-center;
+    @include flex_full_center;
     width: 100%;
     max-height: 150px;
     overflow: hidden;
@@ -104,7 +108,7 @@
       }
     }
     & > .new_1 {
-      top: 710px;
+      top: 725px;
       @media (min-width: 768px) and (max-width: 991px) {
         top: 1295px;
       }
@@ -114,7 +118,7 @@
       }
     }
     & > .new_2 {
-      top: 940px;
+      top: 955px;
       @media (min-width: 768px) and (max-width: 991px) {
         top: 1715px;
       }
@@ -124,7 +128,7 @@
       }
     }
     & > .new_3 {
-      top: 1170px;
+      top: 1185px;
       @media (min-width: 768px) and (max-width: 991px) {
         top: 2140px;
       }
@@ -134,7 +138,7 @@
       }
     }
     & > .new_4 {
-      top: 1400px;
+      top: 1415px;
       @media (min-width: 768px) and (max-width: 991px) {
         top: 2560px;
       }
@@ -145,9 +149,7 @@
     }
   }
   &__text {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    @include flex_col_jc-center;
     height: 28%;
     margin-left: 15px;
     @media (min-width: 768px) and (max-width: 991px) {
@@ -179,4 +181,71 @@
       }
     }
   }
-}  
+}
+
+
+// Vignettes menu
+.plat{
+  @include flex_col_jc-sb;
+  height: 215px;
+  & > h2 {
+    width: 12%;
+    font-weight: 200;
+    padding-bottom: 2px;
+    border-bottom: 2px solid $colour-tertiary;
+  }
+  &__choice {
+    @include flex_col_jc-sb;
+    height: 180px;
+  }
+  &__menu {
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 4px 4px 15px #35353553;
+    padding: 5px 15px 5px 7px;
+    opacity: 0;
+    &>span {
+      display: flex;
+      align-items: flex-end;
+      font-size: 12px;
+      font-weight: 700;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  &__text {
+    @include flex_col_jc-center;
+    width: 80%;
+    height: 100%;
+    & > h3 {
+      font-size: 13px;
+      margin-bottom: 5px;
+    }
+    & > p {
+      font-size: 10px;
+    }
+  }
+}
+
+.plat_1 {
+  animation: load_dishes $dishes_load-dur forwards;
+  -webkit-animation: load_dishes $dishes_load-dur forwards;
+}
+
+.plat_2 {
+  animation: load_dishes $dishes_load-dur $dishes_load-delay forwards;
+  -webkit-animation: load_dishes $dishes_load-dur $dishes_load-delay forwards;
+}
+
+.plat_3 {
+  animation: load_dishes $dishes_load-dur $dishes_load-delay*2 forwards;
+  -webkit-animation: load_dishes $dishes_load-dur $dishes_load-delay*2 forwards;
+}

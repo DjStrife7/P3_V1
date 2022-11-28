@@ -1,11 +1,37 @@
-@mixin flex-center {
+// Positions
+@mixin flex_full_center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@mixin flex-column-space-between {
+@mixin flex_col_full_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin flex_col_ai-center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin flex_col_jc-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@mixin flex_col_jc-sb {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+}
+
+@mixin flex_jc-sb_ai-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

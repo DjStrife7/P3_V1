@@ -18,7 +18,7 @@ footer {
     margin-bottom: 25px;
   }
   @media (min-width: 992px) {
-    @include flex-center;
+    @include flex_full_center;
     margin-bottom: 40px;
   }
   & > img {
@@ -38,9 +38,7 @@ footer {
     width: 100%;
   }
   & > ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flex_col_jc-sb;
     height: 60px;
     @media (min-width: 768px) and (max-width: 991px) {
       height: 120px;

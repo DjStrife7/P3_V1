@@ -1,3 +1,4 @@
+// Carrousel
 @keyframes carrousel_images {
   0% {
     transform: translateX(0);
@@ -76,4 +77,65 @@
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
 }
+}
+
+// Loading vign
+@keyframes load_dishes {
+  0% {
+    opacity: 0;
+    transform: translateY(400px);
+    -webkit-transform: translateY(400px);
+    -moz-transform: translateY(400px);
+    -ms-transform: translateY(400px);
+    -o-transform: translateY(400px);
+}
+  75%{
+    opacity: 0;
+    animation-timing-function: cubic-bezier(.25,0.25,1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+
+// Loading page
+@keyframes loading_screen {
+  0% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes load_bar {
+  0% {
+      transform: scaleX(0);
+      opacity: .1;
+  }
+  17% {
+      transform: scaleX(.18);
+      animation-timing-function: cubic-bezier(.9,0,.1,1);
+  }
+  26% {
+      transform: scaleX(.4);
+  }
+  44% {
+      transform: scaleX(.81);
+      animation-timing-function: cubic-bezier(.25,0.25,1);
+  }
+  85%, 100% {
+      opacity: 1;
+  }
+  100% {
+      transform: scaleX(1);
+  }
 }
