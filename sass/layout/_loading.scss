@@ -8,9 +8,9 @@
   background-color: #fff;
   background-size: cover;
   opacity: 0;
-  animation: loading_screen 2500ms;
-  -webkit-animation: loading_screen 2500ms;
-    &__logo {
+  animation: loading_screen 2500ms forwards;
+  -webkit-animation: loading_screen 2500ms forwards;
+  &__logo {
     width: 150px;
     margin-bottom: 15px;
   }

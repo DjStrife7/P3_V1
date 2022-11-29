@@ -6,6 +6,7 @@ $colour-white: #ffffff;
 $colour-darkgrey: #353535;
 $colour-invalid: #e70000;
 $gradient-color: linear-gradient(175deg, $colour-secondary, $colour-primary);
+$gradient-color2: linear-gradient(175deg, $colour-tertiary 45%, $colour-white);
 
 // Font Variables
 $gg-font-rob: 'Roboto', sans-serif;
