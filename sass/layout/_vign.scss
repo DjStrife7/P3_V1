@@ -214,19 +214,26 @@
     box-shadow: 4px 4px 15px #35353553;
     overflow: hidden;
     opacity: 0;
+    position: relative;
     &__text {
       @include flex_col_jc-sb;
-      width: 200px;
+      width: 220px;
       height: 80%;
       padding: 6px 8px;
+      position: relative;
+      overflow: hidden;
       & > h3 {
         max-height: 20px;
         font-size: 13px;
         margin-bottom: 5px;
+        overflow: hidden;
+        white-space: nowrap;
         text-overflow: ellipsis;
       }
       & > p {
         font-size: 10px;
+        overflow: hidden;
+        white-space: nowrap;
         text-overflow: ellipsis;
       }
     }
@@ -236,14 +243,13 @@
     justify-content: space-between;
     width: 40%;
     height: 100%;
-    transform: translateX(50px);
+    z-index: 10;
+    position: relative;
+      top: 0;
+      right: -18%;
     &:hover {
       cursor: pointer;
       animation: validate-check 500ms 100ms forwards;
-      & + .fa-circle-check {
-        transform: rotate(360deg);
-        transition: transform 500ms;
-      }
     }
     &__text {
       display: flex;
@@ -253,6 +259,13 @@
       font-size: 12px;
       font-weight: 700;
       padding: 5px 0;
+      &:hover {
+        & + .plat__price__check {
+          & > .fas {
+            animation: validate-rotate 500ms 150ms forwards;
+          }
+        }
+      }
     }
     &__check {
       @include flex_full_center;
@@ -262,15 +275,15 @@
       background-color: $colour-tertiary;
     }
   }
-  &_1 {
+  &__1 {
     animation: load_dishes $dishes_load-dur forwards;
     -webkit-animation: load_dishes $dishes_load-dur forwards;
   }
-  &_2 {
+  &__2 {
     animation: load_dishes $dishes_load-dur $dishes_load-delay forwards;
     -webkit-animation: load_dishes $dishes_load-dur $dishes_load-delay forwards;
   }
-  &_3 {
+  &__3 {
     animation: load_dishes $dishes_load-dur $dishes_load-delay*2 forwards;
     -webkit-animation: load_dishes $dishes_load-dur $dishes_load-delay*2 forwards;
   }
