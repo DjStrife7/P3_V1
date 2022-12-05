@@ -1,0 +1,59 @@
+.menu__2 {
+  &__main {
+    min-height: 1190px;
+    max-height: 1750px;
+    @media (min-width: 768px) and (max-width: 991px) {
+      min-height: 2000px;
+      max-height: 2280px;
+    }
+    @media (min-width: 992px) {
+      min-height: 1450px;
+      max-height: 2000px;
+    }
+  }
+  &__block {
+    position: relative;
+      top: -200px;
+    @media (min-width: 768px) and (max-width: 991px) {
+      top: -520px;
+    }
+    @media (min-width: 992px) {
+        top: -200px;
+    }
+    &__prop {
+      height: 800px;
+      @media (min-width: 768px) and (max-width: 991px) {
+        height: 1250px;
+      }
+      @media (min-width: 992px) {
+        height: 630px;
+      }
+    }
+  }
+  &__entrees {
+    height: 280px;
+    @media (min-width: 768px) and (max-width: 991px) {
+      height: 470px;
+    }
+    @media (min-width: 992px) {
+      height: 280px;
+    }
+  }
+  &__choice {
+    height: 250px;
+    @media (min-width: 768px) and (max-width: 991px) {
+      height: 430px;  
+    }
+    @media (min-width: 992px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  &__plat {
+    @media (min-width: 992px) {
+      width: 49%;
+    }
+  }
+
+}
+

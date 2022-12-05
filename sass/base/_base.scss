@@ -1,20 +1,20 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  }
 
 html {
-    font-size: 62.5%;
-    line-height: 1.15;
+  font-size: 62.5%;
+  line-height: 1.15;
   }
 
 body {
-    margin: 0;
-    box-sizing: border-box;
-    background: $colour-white;
+  margin: 0;
+  box-sizing: border-box;
+  background: $colour-white;
 }
 
 main {

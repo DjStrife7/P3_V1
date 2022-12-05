@@ -1,3 +1,14 @@
+.menu__main {
+  min-height: 1115px;
+  max-height: 2000px;
+  @media (min-width: 768px) and (max-width: 991px) {
+    min-height: 1910px;
+  }
+  @media (min-width: 992px) {
+    min-height: 1350px;
+  }
+}
+
 .menu__img {
   @include flex_full_center;
   & > img {
@@ -14,15 +25,39 @@
   background-color: $colour-white;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  @media (min-width: 768px) and (max-width: 991px) {
+      top: -70px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+  }
+  @media (min-width: 992px) {
+      top: -150px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;  
+  }
   &__title {
     @include flex_jc-sb_ai-center;
     & > h1 {
-      font-size: 23px;
+      font-size: 20px;
+      @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 35px;
+        margin: 24px 15px;
+      }
+      @media (min-width: 992px) {
+        font-size: 35px;
+        margin: 24px 15px;
+      }
     }
     & > i {
       @include flex_full_center;
       width: 20%;
       font-size: 20px;
+      @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 35px;
+      }
+      @media (min-width: 992px) {
+        font-size: 35px;
+      }
       &:hover {
         cursor: pointer;
         color: $colour-primary;
@@ -38,6 +73,12 @@
     @include flex_col_jc-sb;
     height: 730px;
     margin: 20px 0;
+    @media (min-width: 768px) and (max-width: 991px) {
+      height: 1150px;
+    }
+    @media (min-width: 992px) {
+      height: 550px;
+    }
   }
   &__button {
     @include flex_full_center;
