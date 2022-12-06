@@ -312,9 +312,7 @@
     overflow: hidden;
     &__block{
       display: flex;
-      animation-duration: 180s;
-      animation-name: carrousel_images;
-      animation-iteration-count: infinite;
+      animation: carrousel_images 180s ease 0s infinite;
       &__img {
         width: 100%;
         height: 700px;

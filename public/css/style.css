@@ -1575,9 +1575,7 @@ footer {
   }
   .carrousel__block {
     display: flex;
-    animation-duration: 180s;
-    animation-name: carrousel_images;
-    animation-iteration-count: infinite;
+    animation: carrousel_images 180s ease 0s infinite;
   }
   .carrousel__block__img {
     width: 100%;
