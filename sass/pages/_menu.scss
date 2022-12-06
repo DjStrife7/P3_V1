@@ -62,6 +62,7 @@
         cursor: pointer;
         color: $colour-primary;
         font-family: "Fontawesome";
+        transition: all 250ms;
       }
       &:active {
         color: $colour-primary;

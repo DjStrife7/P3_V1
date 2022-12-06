@@ -677,6 +677,7 @@ footer {
   cursor: pointer;
   color: #9356DC;
   font-family: "Fontawesome";
+  transition: all 250ms;
 }
 .menu__vign > i:active {
   color: #9356DC;
@@ -1735,6 +1736,7 @@ footer {
   cursor: pointer;
   color: #9356DC;
   font-family: "Fontawesome";
+  transition: all 250ms;
 }
 .menu__block__title > i:active {
   color: #9356DC;
