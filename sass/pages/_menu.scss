@@ -6,6 +6,7 @@
   }
   @media (min-width: 992px) {
     min-height: 1350px;
+    max-height: 1620px;
   }
 }
 
@@ -14,6 +15,9 @@
   & > img {
     z-index: -20;
     width: 100%;
+    @media (min-width: 992px) {
+      max-height: 950px;
+    }
   }
 }
 
