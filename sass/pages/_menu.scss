@@ -1,23 +1,31 @@
 .menu__main {
   min-height: 1115px;
-  max-height: 2000px;
+  max-height: 1310px;
   @media (min-width: 768px) and (max-width: 991px) {
-    min-height: 1910px;
+    min-height: 1920px;
   }
   @media (min-width: 992px) {
-    min-height: 1350px;
+    min-height: 1390px;
     max-height: 1620px;
   }
 }
 
 .menu__img {
-  @include flex_full_center;
+  max-height: 400px;
+  overflow: hidden;
+  @media (min-width: 768px) and (max-width: 991px) {
+    height: 500px;
+    max-height: none;
+    overflow: hidden;
+  }
+  @media (min-width: 992px) {
+    height: 600px;
+    max-height: none;
+    overflow: hidden;
+  }
   & > img {
     z-index: -20;
     width: 100%;
-    @media (min-width: 992px) {
-      max-height: 950px;
-    }
   }
 }
 
@@ -30,12 +38,10 @@
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   @media (min-width: 768px) and (max-width: 991px) {
-      top: -70px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
   }
   @media (min-width: 992px) {
-      top: -150px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;  
   }
