@@ -7,28 +7,16 @@
   border: none;
   padding: 15px 18px;
   border-radius: 35px;
-  -webkit-border-radius: 35px;
-  -moz-border-radius: 35px;
-  -ms-border-radius: 35px;
-  -o-border-radius: 35px;
   margin: 25px 0;
   @media (min-width: 768px) and (max-width: 991px) {
     font-size: 30px;
     font-weight: 700;
     padding: 35px 45px;
     border-radius: 70px;
-    -webkit-border-radius: 70px;
-    -moz-border-radius: 70px;
-    -ms-border-radius: 70px;
-    -o-border-radius: 70px;
   }
   &:hover {
     cursor: pointer;
     transform: scale(1.15);
-    -webkit-transform: scale(1.15);
-    -moz-transform: scale(1.15);
-    -ms-transform: scale(1.15);
-    -o-transform: scale(1.15);
     background: linear-gradient(175deg,
       lighten($color: $colour-secondary, $amount: 5),
       lighten($color: $colour-primary, $amount: 5),
@@ -41,16 +29,8 @@
     box-shadow: 5px 5px 10px $colour-darkgrey;
     padding: 15px;
     border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
     &:hover {
       transform: scale(1.05);
-      -webkit-transform: scale(1.05);
-      -moz-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-      -o-transform: scale(1.05);
       background: linear-gradient(175deg,
       lighten($color: $colour-tertiary,$amount: 5),
       lighten($color: $colour-white,$amount: 5),

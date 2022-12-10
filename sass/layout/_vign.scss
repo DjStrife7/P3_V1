@@ -3,10 +3,6 @@
   height: 210px;
   border: none;
   border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
   box-shadow: 4px 4px 15px #35353553;
   &:hover {
     cursor: pointer;
@@ -14,19 +10,11 @@
   @media (min-width: 768px) and (max-width: 991px) {
     height: 380px;
     border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
   }
   @media (min-width: 992px) {
     width: 48%;
     height: 46%;
     border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
   }
   & > i {
     @include flex_full_center;
@@ -232,10 +220,6 @@
     height: 55px;
     border: none;
     border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
     box-shadow: 4px 4px 15px #35353553;
     overflow: hidden;
     opacity: 0;
@@ -243,10 +227,6 @@
     @media (min-width: 768px) and (max-width: 991px) {
       height: 95px;
       border-radius: 15px;
-      -webkit-border-radius: 15px;
-      -moz-border-radius: 15px;
-      -ms-border-radius: 15px;
-      -o-border-radius: 15px;
     }
     @media (min-width: 992px) {
       width: 32%;
@@ -360,19 +340,15 @@
   }
   &__1 {
     animation: load_dishes $dishes_load-dur forwards;
-    -webkit-animation: load_dishes $dishes_load-dur forwards;
   }
   &__2 {
     animation: load_dishes $dishes_load-dur $dishes_load-delay forwards;
-    -webkit-animation: load_dishes $dishes_load-dur $dishes_load-delay forwards;
   }
   &__3 {
     animation: load_dishes $dishes_load-dur $dishes_load-delay*2 forwards;
-    -webkit-animation: load_dishes $dishes_load-dur $dishes_load-delay*2 forwards;
   }
   &__4 {
     animation: load_dishes $dishes_load-dur $dishes_load-delay*3 forwards;
-    -webkit-animation: load_dishes $dishes_load-dur $dishes_load-delay*3 forwards;
   }
 }
 
